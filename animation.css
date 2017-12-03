@@ -1,0 +1,76 @@
+/* Animation CSS */
+.dees {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.deesrow {
+  position: relative;
+  top: 200px;
+}
+
+.ani-divs {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffff66;
+  padding: 8px;
+  display: inline-block;
+  border-top-left-radius: 40px;
+  border-bottom-style: ridge;
+  border: 2px solid #19c1dd;
+}
+
+.ani-divs2 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffff66;
+  padding: 8px;
+  display: inline-block;
+  border-top-left-radius: 40px;
+  border-bottom-style: ridge;
+  border: 2px solid #19c1dd;
+}
+
+.sin-input {
+  border: none;
+  width: 30px;
+  background-color: #ffff66;
+}
+
+/* new */
+.rowed {
+  position: relative;
+  top: 200px;
+}
+
+#anim-this {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: rgb(97, 218, 251);
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #686868;
+  transform: none;
+}
+
+.pressanim {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}

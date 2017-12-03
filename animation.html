@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+  <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="animation.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--<div class="row deesrow">
+		<div class="col-xs-12 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
+			<div class="dees">
+				<div class="ani-divs2"></div>
+				<div class="ani-divs2"></div>
+				<div class="ani-divs2"></div>
+				<div class="ani-divs2"></div>
+				<div class="ani-divs2"></div>
+			</div><br>
+			<div class="equation">
+				<input id="a" placeholder="a" class="sin-input">*Math.sin(l/<input id="b" placeholder="b" class="sin-input">)<br>
+				(frame, <input id="c" placeholder="c" class="sin-input">)
+			</div>
+			<button id="ani-btn" onclick="tryit('ani-divs2')"> top test</button>
+		</div>
+	</div><br><br>
+
+	<div class="row deesrow">
+		<div class="col-xs-12 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
+			<div class="dees">
+				<div class="ani-divs"></div>
+				<div class="ani-divs"></div>
+				<div class="ani-divs"></div>
+				<div class="ani-divs"></div>
+				<div class="ani-divs"></div>
+			</div><br>
+			<button id="ani-btn" onclick="tryit('ani-divs')"> top test</button>
+		</div>
+	</div><br>-->
+	<div class="row rowed">
+		<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
+			<div id="anim-this" onclick="position('anim-this')"></div>
+			<!--<button class="pressanim" onclick="t1('anim-this')"> Press me </button>-->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-md-push-3 col-lg-6 col-lg-push-3">
+			<div class="col-lg-3">
+				<h3 class="title"> Position </h3>
+				<select>
+					<option value="left"> Left </option>
+					<option value="top"> Top </option>
+					<option value="bottom"> Bottom </option>
+					<option value="right"> Right </option>
+				</select>
+			</div>
+			<div class="col-lg-3">
+				<h3 class="title"> Transform </h3>
+				<select>
+					<option value="scale"> Scale </option>
+					<option value="translate"> Translate </option>
+					<option vlaue="rotate"> Rotate </option>
+					<option value="skew"> Skew </option>
+			</div>
+			<div class="col-lg-3">
+				<h3 class="title"> Color </h3>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- jQuery library -->
+	<script JAVASCRIPT type="text/javascript" src="jquery-3.1.1.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+
+	<!-- Bootstrap javascript -->
+	<script JAVASCRIPT type="text/javascript" src="bootstrap.min.js"></script>
+
+	<!-- Exp JS -->
+	<script type="text/javascript" src="animation.js"></script>
+</body>
+</html>
