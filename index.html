@@ -3,71 +3,173 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
+	<title>Exploring JS Animation</title>
   <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="animation.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<!--<div class="row deesrow">
-		<div class="col-xs-12 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
-			<div class="dees">
-				<div class="ani-divs2"></div>
-				<div class="ani-divs2"></div>
-				<div class="ani-divs2"></div>
-				<div class="ani-divs2"></div>
-				<div class="ani-divs2"></div>
-			</div><br>
-			<div class="equation">
-				<input id="a" placeholder="a" class="sin-input">*Math.sin(l/<input id="b" placeholder="b" class="sin-input">)<br>
-				(frame, <input id="c" placeholder="c" class="sin-input">)
-			</div>
-			<button id="ani-btn" onclick="tryit('ani-divs2')"> top test</button>
+	<div class="containter">
+		<div class="row">
+			<h1 class="titles text-center">An Exploration of JavaScript Animation</h1>
 		</div>
-	</div><br><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<h2 class="titles text-center">Function Name</h2>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<h2 class="titles text-center">Animated Div</h2>
+				<h4 class="titles text-center">Click to animate</h4>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<h2 class="titles text-center">CSS Properties</h2>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigLeft()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigLeft('anim', 0)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">left</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigTop()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigTop('anim', 1)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">top</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigCorners()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigCorners('anim', 2)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">border-radius</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigwidth()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigWidth('anim', 3)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">width</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigHeight()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigHeight('anim', 4)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">height</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigScale()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigScale('anim', 5)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">transform: scale()</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigRotate()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigRotate('anim', 6)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">transform: rotate()</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigSkew()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigSkew('anim', 7)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">transform: skew()</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigTranslate()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim" onclick="jigTranslate('anim', 8)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">transform: translate()</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigMatrix()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="anim"> coming soon</div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">transform: matrix()</p>
+			</div>
+		</div><br>
 
-	<div class="row deesrow">
-		<div class="col-xs-12 col-sm-10 col-sm-push-1 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
-			<div class="dees">
-				<div class="ani-divs"></div>
-				<div class="ani-divs"></div>
-				<div class="ani-divs"></div>
-				<div class="ani-divs"></div>
-				<div class="ani-divs"></div>
-			</div><br>
-			<button id="ani-btn" onclick="tryit('ani-divs')"> top test</button>
+		<br>
+		<div class="row">
+			<h2 class="text-center titles">Font Animation</h2>
 		</div>
-	</div><br>-->
-	<div class="row rowed">
-		<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-10 col-lg-push-1">
-			<div id="anim-this" onclick="position('anim-this')"></div>
-			<!--<button class="pressanim" onclick="t1('anim-this')"> Press me </button>-->
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-6 col-md-push-3 col-lg-6 col-lg-push-3">
-			<div class="col-lg-3">
-				<h3 class="title"> Position </h3>
-				<select>
-					<option value="left"> Left </option>
-					<option value="top"> Top </option>
-					<option value="bottom"> Bottom </option>
-					<option value="right"> Right </option>
-				</select>
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">jigFontSize()</p>
 			</div>
-			<div class="col-lg-3">
-				<h3 class="title"> Transform </h3>
-				<select>
-					<option value="scale"> Scale </option>
-					<option value="translate"> Translate </option>
-					<option vlaue="rotate"> Rotate </option>
-					<option value="skew"> Skew </option>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="fanim text-center" onclick="jigFontSize('fanim', 0)">fanim</p>
 			</div>
-			<div class="col-lg-3">
-				<h3 class="title"> Color </h3>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">font-size</p>
 			</div>
+		</div><br>
 
+		<br>
+		<div class="row">
+			<h2 class="text-center titles">CSS Property Combinations</h2>
 		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center function-name">variety1()</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="combo-anim" onclick="variety1('combo-anim', 0)"></div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<p class="text-center properties">transform: rotate, scale, border-radius, background, box-shadow</p>
+			</div>
+		</div>
+		<br>
 	</div>
 
 

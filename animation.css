@@ -1,76 +1,53 @@
 /* Animation CSS */
-.dees {
+
+.titles {
+  color: #686868;
+}
+
+.anim {
   position: relative;
+  margin: 0 auto;
   display: block;
-  margin: 0 auto;
-}
-
-.deesrow {
-  position: relative;
-  top: 200px;
-}
-
-.ani-divs {
-  position: relative;
-  margin: 0 auto;
-  top: 0px;
-  left: 0px;
-  width: 20px;
-  height: 20px;
-  background-color: #ffff66;
-  padding: 8px;
-  display: inline-block;
-  border-top-left-radius: 40px;
-  border-bottom-style: ridge;
-  border: 2px solid #19c1dd;
-}
-
-.ani-divs2 {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 20px;
-  height: 20px;
-  background-color: #ffff66;
-  padding: 8px;
-  display: inline-block;
-  border-top-left-radius: 40px;
-  border-bottom-style: ridge;
-  border: 2px solid #19c1dd;
-}
-
-.sin-input {
-  border: none;
-  width: 30px;
-  background-color: #ffff66;
-}
-
-/* new */
-.rowed {
-  position: relative;
-  top: 200px;
-}
-
-#anim-this {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   background: rgb(97, 218, 251);
   border-radius: 8px;
+  left: 0px;
+  top: 0px;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.function-name {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.properties {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.fanim {
+  position: relative;
+  top: 10px;
+  font-size: 16px;
+  color: #686868;
+}
+
+.combo-anim {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 75px;
+  height: 75px;
+  background: rgb(97, 218, 251);
+  border-radius: 8px;
+  left: 0px;
+  top: 0px;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
   box-shadow: 0px 0px 8px #686868;
-  transform: none;
-}
-
-.pressanim {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-
-.title {
-  position: relative;
-  display: block;
-  margin: 0 auto;
 }
